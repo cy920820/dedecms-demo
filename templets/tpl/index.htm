@@ -1,0 +1,603 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="{dede:global.cfg_keywords/}">
+  <meta name="description" content="{dede:global.cfg_description/}">
+  <meta name="author" content="YY-MO">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/lib.css">
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/style.css">
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/4100.css">
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery-1.11.3.min.js"></script>
+  <script>$(function () { if (!$("#mindex").length) { $('body').addClass('sscreen') } })</script>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/org.min.js" data-main="indexMain"></script>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/form.min.js"></script>
+  <title>{dede:global.cfg_webname/}</title>
+</head>
+
+<body data-uid="">
+  <div class="bodyMask"> </div>
+  <div id="header" class="index_nav">
+    <div class="content">
+      <a href="#" id="logo">
+        <img src="{dede:global.cfg_templets_skin/}/images/1505115294665.png"
+          height="40" />
+        </a>
+      <ul id="nav">
+
+        <li class="navitem"><a class="nav-a  active " href="#" target="_self"><span data-title="首页">首页</span></a></li>
+
+        {dede:channelartlist row='2' typeid='3,2' }
+        <li class="navitem"><a class="nav-a " href="{dede:field name='typeurl'/}" target=""><span data-title="{dede:field name='typename'/}">{dede:field name='typename'/}</span><i
+              class="fa fa-angle-down"></i></a>
+          
+          <ul class="subnav">
+
+            {dede:channel type='son' noself='yes' }
+            <li><a href="[field:typelink/]" target="_self"><span
+                  data-title="[field:typename/]">[field:typename/]</span><i class="fa fa-angle-right"></i></a></li>
+            {/dede:channel}
+          </ul>
+        </li>
+        {/dede:channelartlist}
+
+        {dede:channel row='2' type="top" typeid='4,8'}
+        <li class="navitem"><a class="nav-a " href="[field:typelink/]" target="_self"><span
+              data-title="[field:typename/]">[field:typename/]</span></a></li>
+        {/dede:channel}
+      </ul>
+
+      <div class="clear"></div>
+
+    </div>
+
+
+    <a id="headSHBtn" href="javascript:;"><i class="fa fa-bars"></i></a>
+
+  </div>
+
+  <div id="sitecontent">
+
+    <div id="indexPage">
+      <div id="mslider" class="module">
+        <script type="text/javascript">
+          $(function () { $("#mslider li video").each(function (index, element) { element.play(); }); })
+        </script>
+
+        <ul class="slider" data-options-height="650" data-options-auto="0" data-options-mode="1" data-options-pause="5"
+          data-options-ease="ease-out">
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/150405681052.jpg)"
+            class="active">
+            <div id="tempImage_0"></div><img style="display:none"
+              src="{dede:global.cfg_templets_skin/}/images/150405681052.jpg" alt="" />
+            <div class="mask"></div><a target="_blank" href="javascript:;">
+              <div>
+                <p class="title ellipsis"></p>
+              </div>
+              <div class="sliderArrow fa fa-angle-down"></div>
+            </a>
+          </li>
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/1504056531662.jpg)">
+            <div id="tempImage_1"></div><img style="display:none"
+              src="{dede:global.cfg_templets_skin/}/images/1504056531662.jpg" alt="" />
+            <div class="mask"></div><a target="_blank" href="javascript:;">
+              <div>
+                <p class="title ellipsis"></p>
+              </div>
+              <div class="sliderArrow fa fa-angle-down"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="mindex" data-options-ease="Expo.easeInOut" data-options-speed="1" data-options-sscreen="0"></div>
+      <div id="mnews" class="module">
+        <div class="bgmask"></div>
+        <div class="content layoutnone">
+          <div class="header wow">
+            <p class="title">媒体观点</p>
+            <p class="subtitle">Media point of view</p>
+          </div>
+          <div class="module-content" id="newslist">
+            <div class="wrapper">
+              <ul class="content_list" data-options-sliders="3" data-options-margin="20" data-options-ease="u65e0"
+                data-options-speed="0" data-options-mode="horizontal" data-options-wheel="0">
+                <li id="newsitem_0" class="wow newstitem left"><a class="newscontent" target="_blank"
+                    href="//mo004_4100.mo4.line1.uemo.net/news/post/26618/">
+                    <div class="news_wrapper">
+                      <div class="newsbody">
+                        <p class="date wow"><span class="md">2016<span>-</span></span><span class="year">08-12</span>
+                        </p>
+                        <p class="title wow">为期4天的第十七届国际消防设备技术交流展览会即将在首都北京开幕</p>
+                        <div class="separator"></div>
+                        <p class="description wow">8月3日 广东省企业联合会 广东省企业家协会发布2016年广东省企业500强及广东省民营企业100强榜单...</p>
+                      </div>
+                    </div>
+                    <div class="newsimg"
+                      style="background-image:url({dede:global.cfg_templets_skin/}/images/150406205822.jpg)">
+                    </div>
+                  </a>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/news/post/26618/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+                <li id="newsitem_1" class="wow newstitem right"><a class="newscontent" target="_blank"
+                    href="//mo004_4100.mo4.line1.uemo.net/news/post/26620/">
+                    <div class="news_wrapper">
+                      <div class="newsbody">
+                        <p class="date wow"><span class="md">2016<span>-</span></span><span class="year">08-11</span>
+                        </p>
+                        <p class="title wow">XGC16000履带起重机助力日照海洋馆穹顶吊装</p>
+                        <div class="separator"></div>
+                        <p class="description wow">随着日照海洋公园海洋馆混凝土主体结构的完成，8月17日，场馆中心穹顶整体吊装工程启动...</p>
+                      </div>
+                    </div>
+                    <div class="newsimg"
+                      style="background-image:url({dede:global.cfg_templets_skin/}/images/150406207175.jpg)">
+                    </div>
+                  </a>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/news/post/26620/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+                <li id="newsitem_2" class="wow newstitem left"><a class="newscontent" target="_blank"
+                    href="//mo004_4100.mo4.line1.uemo.net/news/post/26619/">
+                    <div class="news_wrapper">
+                      <div class="newsbody">
+                        <p class="date wow"><span class="md">2016<span>-</span></span><span class="year">08-10</span>
+                        </p>
+                        <p class="title wow">多功能护栏抢修车首次批量订单顺利发车</p>
+                        <div class="separator"></div>
+                        <p class="description wow">随车自主研发的多功能护栏抢修车身披大红花 整装待发 即将交付山东高速...</p>
+                      </div>
+                    </div>
+                    <div class="newsimg"
+                      style="background-image:url({dede:global.cfg_templets_skin/}/images/150406208177.jpg)">
+                    </div>
+                  </a>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/news/post/26619/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <a href="//mo004_4100.mo4.line1.uemo.net/news/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
+          <div style="height:0">&nbsp;</div>
+        </div>
+      </div>
+      <div id="mproject" class="module">
+        <div class="bgmask"></div>
+        <div class="content layoutnone">
+          <div class="header wow">
+            <p class="title">施工案例</p>
+            <p class="subtitle">Construction Cases</p>
+          </div>
+          <div id="category" class="hide wow">
+            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/42644/">环卫机械</a>
+            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/41441/">运输机械</a>
+            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/42643/"> 挖掘机械</a>
+            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/41439/">铁路工程</a>
+            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/41442/">流通服务</a>
+          </div>
+          <!--yyLayout masonry-->
+          <div class="module-content" id="projectlist">
+            <div class="projectSubList" id="projectSubList_">
+              <div class="projectSubHeader">
+                <p class="title"></p>
+                <p class="subtitle"></p>
+              </div>
+              <div class="wrapper">
+                <ul class="content_list" data-options-sliders="12" data-options-margin="10" data-options-ease="u65e0"
+                  data-options-speed="0">
+                  <li id="projectitem_0" class="projectitem wow">
+                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173876/" class="projectitem_content"
+                      target="_blank">
+                      <div class="projectitem_wrapper">
+                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074607824.jpg"
+                            alt="HPB7混凝土湿喷机工程" width="650" height="385" /></div>
+                        <div class="project_info">
+                          <div>
+                            <p class="title">HPB7混凝土湿喷机工程</p>
+                            <p class="subtitle">地铁湿喷成套设备</p>
+                            <p class="description hide">
+                              混凝土湿喷机采用低压低速旋涡气流输送,近距离喷射的工作原理,克服了堵管,脉冲,离析等问题.使喷射料流均匀,稳定。提高喷层质料。使用湿喷机进行喷射混凝土作业，可以大幅度降低粉尘浓度和回弹率，增大一次喷层厚度，提高生产效率，保证工程质量。立即购买
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li id="projectitem_1" class="projectitem wow">
+                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173881/" class="projectitem_content"
+                      target="_blank">
+                      <div class="projectitem_wrapper">
+                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074687807.jpg"
+                            alt="施工升降机 XCT3" width="650" height="385" /></div>
+                        <div class="project_info">
+                          <div>
+                            <p class="title">施工升降机 XCT3</p>
+                            <p class="subtitle">增加双泵合流功能</p>
+                            <p class="description hide">施工电梯通常称为施工升降机，但施工升降机包括的定义更宽广，施工平台也属于施工升降机系列</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li id="projectitem_2" class="projectitem wow">
+                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173879/" class="projectitem_content"
+                      target="_blank">
+                      <div class="projectitem_wrapper">
+                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074712302.jpg"
+                            alt="产品3D展厅 " width="650" height="385" /></div>
+                        <div class="project_info">
+                          <div>
+                            <p class="title">产品3D展厅 </p>
+                            <p class="subtitle">给您最震撼的视觉体验！</p>
+                            <p class="description hide">
+                              不可思议的错觉空间，炫酷的体感互动游戏，让你惊声尖叫的发型大爆炸，在这里所有的游客能够感受到3D错觉艺术馆所带来的无限乐趣。一场无与伦比的视觉之旅，一生一定要拍的照片，属于我们的青春纪念册！
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li id="projectitem_3" class="projectitem wow">
+                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173878/" class="projectitem_content"
+                      target="_blank">
+                      <div class="projectitem_wrapper">
+                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074801341.jpg"
+                            alt="HPB220混凝土湿喷机" width="650" height="385" /></div>
+                        <div class="project_info">
+                          <div>
+                            <p class="title">HPB220混凝土湿喷机</p>
+                            <p class="subtitle">隧道 护坡湿喷成套设备</p>
+                            <p class="description hide">
+                              在转子的每个料腔内有一个活塞、转子活塞与凸轮组成联动机构、在转子的转动过程中，通过凸轮、活塞杆、转子联动机构迫使活塞在料腔内上下移动、完成下料和喂料。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li id="projectitem_4" class="projectitem wow">
+                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173882/" class="projectitem_content"
+                      target="_blank">
+                      <div class="projectitem_wrapper">
+                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074634815.jpg"
+                            alt="帮您找产品" width="650" height="385" /></div>
+                        <div class="project_info">
+                          <div>
+                            <p class="title">帮您找产品</p>
+                            <p class="subtitle">提供全球信赖的工程机械解决方案</p>
+                            <p class="description hide">
+                              解决方案Solution就是针对某些已经体现出的，或者可以预期的问题、不足、缺陷、需求等等，所提出的一个解决整体问题的方案（建议书、计划表），同时能够确保加以有效的执行。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li id="projectitem_5" class="projectitem wow">
+                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173880/" class="projectitem_content"
+                      target="_blank">
+                      <div class="projectitem_wrapper">
+                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/150407476376.jpg"
+                            alt="GD800D混凝土搅拌运输车" width="650" height="385" /></div>
+                        <div class="project_info">
+                          <div>
+                            <p class="title">GD800D混凝土搅拌运输车</p>
+                            <p class="subtitle">地铁湿喷成套设备</p>
+                            <p class="description hide">混凝土搅拌运输车或称搅拌车，是用来运送建筑用预拌混凝土的专用卡车；由于它的外形，也常被称为田螺车</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--wrapper-->
+            </div>
+            <!--projectSubList-->
+            <a href="//mo004_4100.mo4.line1.uemo.net/project/" class="more wow">MORE<i
+                class="fa fa-angle-right"></i></a>
+          </div>
+          <!--projectlist-->
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!--project-->
+      <div id="mservice" class="module bgShow"
+        style="background-image:url({dede:global.cfg_templets_skin/}/images/1504076585336.jpg);">
+        <div class="bgmask"></div>
+        <div class="content layoutnone">
+          <div class="header wow fw" data-wow-delay=".1s">
+            <p class="title">服务支持</p>
+            <p class="subtitle">service support</p>
+          </div>
+          <div class="module-content fw" id="servicelist">
+            <div class="wrapper">
+              <ul class="content_list" data-options-sliders="3" data-options-margin="50" data-options-ease="u65e0"
+                data-options-speed="0">
+                <li id="serviceitem_0" class="serviceitem wow"><a
+                    href="//mo004_4100.mo4.line1.uemo.net/service/post/16083/" target="_blank">
+                    <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/1504077608955.jpg"
+                        width="320" height="120" alt="再制造" /></p>
+                    <div class="service_info">
+                      <p class="title">再制造</p>
+                      <p class="description">业务咨询</p>
+                    </div>
+                  </a>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16083/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+                <li id="serviceitem_1" class="serviceitem wow"><a
+                    href="//mo004_4100.mo4.line1.uemo.net/service/post/16082/" target="_blank">
+                    <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/150407771280.jpg"
+                        width="320" height="120" alt="配件订购" /></p>
+                    <div class="service_info">
+                      <p class="title">配件订购</p>
+                      <p class="description">填写您所需配件信息
+                      </p>
+                    </div>
+                  </a>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16082/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+                <li id="serviceitem_2" class="serviceitem wow"><a
+                    href="//mo004_4100.mo4.line1.uemo.net/service/post/16081/" target="_blank">
+                    <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/1504077693786.jpg"
+                        width="320" height="120" alt="金融服务" /></p>
+                    <div class="service_info">
+                      <p class="title">金融服务</p>
+                      <p class="description">提供融资租赁服务</p>
+                    </div>
+                  </a>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16081/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <a href="//mo004_4100.mo4.line1.uemo.net/service/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div id="mpage" class="module bgShow"
+        style="background-image:url({dede:global.cfg_templets_skin/}/images/1505183489906.jpg);">
+        <div class="bgmask"></div>
+        <div class="content">
+          <div class="module-content">
+            <div class="wrapper">
+              <ul class="slider one">
+                <li>
+                  <div class="header wow" data-wow-delay=".2s">
+                    <p class="title">了解我们</p>
+                    <p class="subtitle">understand us</p>
+                  </div>
+                  <div class="des-wrap">
+                    <p class="description wow" data-wow-delay=".3s">
+                      股份有限公司(ZPMC)是重型装备制造行业的知名企业，为国有控股A、B股上市公司，控股方为世界500强之一的中国交通建设股份有限公司。
+                    </p>
+                  </div>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/page/72684/" class="more wow" data-wow-delay=".5s">MORE<i
+                      class="fa fa-angle-right"></i></a>
+                  <div class="fimg wow"
+                    style="background-image:url({dede:global.cfg_templets_skin/}/images/1504149457291.jpg)">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mteam" class="module">
+        <div class="bgmask"></div>
+        <div class="content layoutslider">
+          <div class="header wow">
+            <p class="title">基地分布</p>
+            <p class="subtitle">Base distribution</p>
+          </div>
+          <div class="module-content fw">
+            <div class="wrapper">
+              <ul class="content_list" data-options-sliders="2" data-options-margin="80" data-options-ease="u65e0"
+                data-options-speed="0">
+                <li id="teamitem_0" class="wow">
+                  <div class="header wow" data-wow-delay=".2s"><a
+                      href="//mo004_4100.mo4.line1.uemo.net/team/post/17386/" target="_blank"><img
+                        src="{dede:global.cfg_templets_skin/}/images/1504159536273.jpg" alt="重工集团（南通）传动机械有限公司"
+                        width="180" height="180" /></a></div>
+                  <div class="summary wow">
+                    <p class="title"><a href="//mo004_4100.mo4.line1.uemo.net/team/post/17386/">重工集团（南通）传动机械有限公司</a></p>
+                    <p class="subtitle">Heavy Industry Group (Nantong) Transmission Machinery Co., Ltd</p>
+                    <p class="description wow">南通市经济技术开发区团结河东路1号 南面长江 西邻苏通大桥 与沿江 沿海高速公路相通 具有优越的地理位置和交通条件</p>
+                  </div>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/team/post/17386/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+                <li id="teamitem_1" class="wow">
+                  <div class="header wow" data-wow-delay=".2s"><a
+                      href="//mo004_4100.mo4.line1.uemo.net/team/post/17388/" target="_blank"><img
+                        src="{dede:global.cfg_templets_skin/}/images/1504581824430.jpg" alt="重工启东海洋工程股份有限公司" width="180"
+                        height="180" /></a></div>
+                  <div class="summary wow">
+                    <p class="title"><a href="//mo004_4100.mo4.line1.uemo.net/team/post/17388/">重工启东海洋工程股份有限公司</a></p>
+                    <p class="subtitle">Heavy Industry Qidong Marine Engineering Co., Ltd</p>
+                    <p class="description wow">公司以特种海洋工程船舶 各类海上平台等海工装备船舶的设计 建造为主 兼顾普通类散杂货船 多用途船等船舶类型的设计建造...</p>
+                  </div>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/team/post/17388/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+                <li id="teamitem_2" class="wow">
+                  <div class="header wow" data-wow-delay=".2s"><a
+                      href="//mo004_4100.mo4.line1.uemo.net/team/post/17387/" target="_blank"><img
+                        src="{dede:global.cfg_templets_skin/}/images/1504159493258.jpg" alt="集团股份有限公司南通分公司" width="180"
+                        height="180" /></a></div>
+                  <div class="summary wow">
+                    <p class="title"><a href="//mo004_4100.mo4.line1.uemo.net/team/post/17387/">集团股份有限公司南通分公司</a></p>
+                    <p class="subtitle">Group Co., Ltd. Nantong Branch</p>
+                    <p class="description wow">2006年初开始在一片芦苇荒滩吹砂围填 通过边建设边生产 迅速建设起一座集大型钢结构制造 港机产品总装 调试...</p>
+                  </div>
+                  <a href="//mo004_4100.mo4.line1.uemo.net/team/post/17387/" target="_blank" class="details">more<i
+                      class="fa fa-angle-right"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <a href="//mo004_4100.mo4.line1.uemo.net/team/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div id="mpartner" class="module">
+        <div class="bgmask"></div>
+        <div class="content layoutslider">
+          <div class="header wow fw" data-wow-delay=".1s">
+            <p class="title">合作伙伴</p>
+            <p class="subtitle">partner</p>
+          </div>
+          <div class="module-content fw">
+            <div class="wrapper">
+              <ul class="content_list" data-options-ease="u65e0" data-options-speed="1">
+                <li id="partneritem_0" class="wow"><a href="https://www.baidu.com/" title="logo name" target="_blank"
+                    class="wow slideInUp" data-wow-delay=".0s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1469524488299.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp"
+                    data-wow-delay=".1s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1456903258323.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp"
+                    data-wow-delay=".2s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1456902742463.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp"
+                    data-wow-delay=".3s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1439189029655.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp"
+                    data-wow-delay=".4s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1540287037879.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a><a title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".5s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1540287048369.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a><a title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".6s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1540287056529.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a><a title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".7s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1540287048369.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a></li>
+                <li id="partneritem_8" class="wow"><a href="https://www.baidu.com/" title="logo name" target="_blank"
+                    class="wow slideInUp" data-wow-delay=".8s">
+
+                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1439190821599.png" width="160"
+                        height="80" alt="logo name" /></p>
+                    <p class="par_title">logo name</p>
+
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mcontact" class="module">
+        <div class="bgmask"></div>
+        <div class="content">
+          <div class="header wow fadeInUp fw" data-wow-delay=".1s">
+            <p class="title">联系</p>
+            <p class="subtitle">Contact</p>
+          </div>
+          <div id="contactlist" class="fw">
+            <div id="contactinfo" class="fl wow" data-wow-delay=".2s">
+
+              <h3 class="ellipsis name">{dede:global.cfg_webname/}</h3>
+              <p class="ellipsis add"><span>地点：</span>{dede:global.cfg_address/}</p>
+              <p class="ellipsis zip"><span>邮编：</span>{dede:global.cfg_zip_code/}</p>
+              <p class="ellipsis tel"><span>电话：</span>{dede:global.cfg_tel/}</p>
+              <p class="ellipsis mobile"><span>手机：</span>{dede:global.cfg_mobile/}</p>
+              <p class="ellipsis fax"><span>传真：</span>{dede:global.cfg_fax/}</p>
+              <p class="ellipsis email"><span>邮箱：</span>{dede:global.cfg_email/}</p>
+              <div><a class="fl" target="_blank" href="http://weibo.com/web"><i class="fa fa-weibo"></i></a><a
+                  class="fl" target="_blank" href="tencent://message/?uin=40080000&Site=uemo&Menu=yes"><i
+                    class="fa fa-qq"></i></a> <a id="mpbtn" class="fl"
+                  href="{dede:global.cfg_templets_skin/}/images/1438424052624.jpg"><i class="fa fa-weixin"></i></a>
+              </div>
+            </div>
+            <div id="contactform" class="fr wow" data-wow-delay=".2s">
+              <form action="//mo004_4100.mo4.line1.uemo.net/message/" method="post">
+                <p>
+                  <input type="text" class="inputtxt name" name="name" placeholder="姓名" autocomplete="off" />
+                </p>
+                <p>
+                  <input type="text" class="inputtxt email" name="email" placeholder="邮箱" autocomplete="off" />
+                </p>
+                <p>
+                  <input type="text" class="inputtxt tel" name="tel" placeholder="电话" autocomplete="off" />
+                </p>
+                <p>
+                  <textarea class="inputtxt cont" name="content" placeholder="内容" autocomplete="off"></textarea>
+                </p>
+                <p>
+                  <input class="inputsub" type="submit" value="提交" />
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>{dede:global.cfg_copyright/}<a class="beian" href="http://www.miitbeian.gov.cn/"
+        style="display:inline; width:auto; color:#8e8e8e" target="_blank"> </a></p>
+  </div>
+  <div id="shares"><a id="sshare"><i class="fa fa-share-alt"></i></a><a
+      href="http://service.weibo.com/share/share.php?appkey=3206975293&" target="_blank" id="sweibo"><i
+        class="fa fa-weibo"></i></a><a href="javascript:;" id="sweixin"><i class="fa fa-weixin"></i></a><a
+      href="javascript:;" id="gotop"><i class="fa fa-angle-up"></i></a></div>
+  <div class="fixed" id="fixed_weixin">
+    <div class="fixed-container">
+      <div id="qrcode"></div>
+      <p>扫描二维码分享到微信</p>
+    </div>
+  </div>
+  <div id="online_open"><i class="fa fa-comments-o"></i></div>
+  <div id="online_lx">
+    <div id="olx_head">在线咨询<i class="fa fa-times fr" id="online_close"></i></div>
+    <ul id="olx_qq">
+      <li><a href="tencent://message/?uin=40080000&Site=uelike&Menu=yes"><i class="fa fa-qq"></i>40080000</a></li>
+    </ul>
+    <div id="olx_tel">
+      <div><i class="fa fa-phone"></i>联系电话</div>
+      <p>400-888-8888<br /></p>
+    </div>
+  </div>
+</body>
+
+</html>
