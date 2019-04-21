@@ -23,31 +23,18 @@
 
 <body data-uid="">
   <div class="bodyMask"> </div>
+
   <div id="header" class="index_nav">
     <div class="content">
-      <a href="#" id="logo">
+      <a href="{dede:global.cfg_basehost/}" id="logo">
         <img src="{dede:global.cfg_templets_skin/}/images/1505115294665.png"
           height="40" />
         </a>
       <ul id="nav">
 
-        <li class="navitem"><a class="nav-a  active " href="#" target="_self"><span data-title="首页">首页</span></a></li>
+        <li class="navitem"><a class="nav-a  active " href="{dede:global.cfg_basehost/}" target="_self"><span data-title="首页">首页</span></a></li>
 
-        {dede:channelartlist row='2' typeid='3,2' }
-        <li class="navitem"><a class="nav-a " href="{dede:field name='typeurl'/}" target=""><span data-title="{dede:field name='typename'/}">{dede:field name='typename'/}</span><i
-              class="fa fa-angle-down"></i></a>
-          
-          <ul class="subnav">
-
-            {dede:channel type='son' noself='yes' }
-            <li><a href="[field:typelink/]" target="_self"><span
-                  data-title="[field:typename/]">[field:typename/]</span><i class="fa fa-angle-right"></i></a></li>
-            {/dede:channel}
-          </ul>
-        </li>
-        {/dede:channelartlist}
-
-        {dede:channel row='2' type="top" typeid='4,8'}
+        {dede:channel row='4' type="top" typeid='1,2,3,4'}
         <li class="navitem"><a class="nav-a " href="[field:typelink/]" target="_self"><span
               data-title="[field:typename/]">[field:typename/]</span></a></li>
         {/dede:channel}
@@ -103,69 +90,38 @@
             <p class="title">媒体观点</p>
             <p class="subtitle">Media point of view</p>
           </div>
+
           <div class="module-content" id="newslist">
             <div class="wrapper">
               <ul class="content_list" data-options-sliders="3" data-options-margin="20" data-options-ease="u65e0"
                 data-options-speed="0" data-options-mode="horizontal" data-options-wheel="0">
+
+                {dede:arclist row='3' titlelen='35' orderby ='pubdate'   typeid='3'  infolen='100'  imgwidth='370'  imgheight='190'  }
                 <li id="newsitem_0" class="wow newstitem left"><a class="newscontent" target="_blank"
-                    href="//mo004_4100.mo4.line1.uemo.net/news/post/26618/">
+                    href="[field:arcurl/]">
                     <div class="news_wrapper">
                       <div class="newsbody">
-                        <p class="date wow"><span class="md">2016<span>-</span></span><span class="year">08-12</span>
+                        <p class="date wow"><span class="md">[field:pubdate function="MyDate('y',@me)"/]<span>-</span></span><span class="year">[field:pubdate function="MyDate('m-d',@me)"/]</span>
                         </p>
-                        <p class="title wow">为期4天的第十七届国际消防设备技术交流展览会即将在首都北京开幕</p>
+                        <p class="title wow">[field:title/]...</p>
                         <div class="separator"></div>
-                        <p class="description wow">8月3日 广东省企业联合会 广东省企业家协会发布2016年广东省企业500强及广东省民营企业100强榜单...</p>
+                        <p class="description wow">[field:description function="cn_substr(@me,140)"/]</p>
                       </div>
                     </div>
                     <div class="newsimg"
-                      style="background-image:url({dede:global.cfg_templets_skin/}/images/150406205822.jpg)">
+                      style="background-image:url([field:picname/])">
                     </div>
                   </a>
-                  <a href="//mo004_4100.mo4.line1.uemo.net/news/post/26618/" target="_blank" class="details">more<i
+                  <a href="[field:arcurl/]" target="_blank" class="details">more<i
                       class="fa fa-angle-right"></i></a>
                 </li>
-                <li id="newsitem_1" class="wow newstitem right"><a class="newscontent" target="_blank"
-                    href="//mo004_4100.mo4.line1.uemo.net/news/post/26620/">
-                    <div class="news_wrapper">
-                      <div class="newsbody">
-                        <p class="date wow"><span class="md">2016<span>-</span></span><span class="year">08-11</span>
-                        </p>
-                        <p class="title wow">XGC16000履带起重机助力日照海洋馆穹顶吊装</p>
-                        <div class="separator"></div>
-                        <p class="description wow">随着日照海洋公园海洋馆混凝土主体结构的完成，8月17日，场馆中心穹顶整体吊装工程启动...</p>
-                      </div>
-                    </div>
-                    <div class="newsimg"
-                      style="background-image:url({dede:global.cfg_templets_skin/}/images/150406207175.jpg)">
-                    </div>
-                  </a>
-                  <a href="//mo004_4100.mo4.line1.uemo.net/news/post/26620/" target="_blank" class="details">more<i
-                      class="fa fa-angle-right"></i></a>
-                </li>
-                <li id="newsitem_2" class="wow newstitem left"><a class="newscontent" target="_blank"
-                    href="//mo004_4100.mo4.line1.uemo.net/news/post/26619/">
-                    <div class="news_wrapper">
-                      <div class="newsbody">
-                        <p class="date wow"><span class="md">2016<span>-</span></span><span class="year">08-10</span>
-                        </p>
-                        <p class="title wow">多功能护栏抢修车首次批量订单顺利发车</p>
-                        <div class="separator"></div>
-                        <p class="description wow">随车自主研发的多功能护栏抢修车身披大红花 整装待发 即将交付山东高速...</p>
-                      </div>
-                    </div>
-                    <div class="newsimg"
-                      style="background-image:url({dede:global.cfg_templets_skin/}/images/150406208177.jpg)">
-                    </div>
-                  </a>
-                  <a href="//mo004_4100.mo4.line1.uemo.net/news/post/26619/" target="_blank" class="details">more<i
-                      class="fa fa-angle-right"></i></a>
-                </li>
+                {/dede:arclist}
+
               </ul>
             </div>
           </div>
           <div class="clear"></div>
-          <a href="//mo004_4100.mo4.line1.uemo.net/news/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
+          <a href="{dede:global.cfg_basehost/}/media_viewport/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
           <div style="height:0">&nbsp;</div>
         </div>
       </div>
@@ -173,15 +129,13 @@
         <div class="bgmask"></div>
         <div class="content layoutnone">
           <div class="header wow">
-            <p class="title">施工案例</p>
-            <p class="subtitle">Construction Cases</p>
+            <p class="title">产品中心</p>
+            <p class="subtitle">Products Center</p>
           </div>
           <div id="category" class="hide wow">
-            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/42644/">环卫机械</a>
-            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/41441/">运输机械</a>
-            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/42643/"> 挖掘机械</a>
-            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/41439/">铁路工程</a>
-            <a href="//mo004_4100.mo4.line1.uemo.net/project/cid/41442/">流通服务</a>
+            {dede:channel  row='3'  type ='son'  typeid ='2'  }
+            <a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>
+            {/dede:channel}
           </div>
           <!--yyLayout masonry-->
           <div class="module-content" id="projectlist">
@@ -193,114 +147,34 @@
               <div class="wrapper">
                 <ul class="content_list" data-options-sliders="12" data-options-margin="10" data-options-ease="u65e0"
                   data-options-speed="0">
+
+                  {dede:arclist row='6' typeid='2' titlelen='30' orderby ='pubdate'  }
                   <li id="projectitem_0" class="projectitem wow">
-                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173876/" class="projectitem_content"
+                    <a href="[field:arcurl/]" class="projectitem_content"
                       target="_blank">
                       <div class="projectitem_wrapper">
-                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074607824.jpg"
-                            alt="HPB7混凝土湿喷机工程" width="650" height="385" /></div>
+                        <div class="project_img"><img src="[field:picname/]"
+                            alt="[field:title/]" width="650" height="385" /></div>
                         <div class="project_info">
                           <div>
-                            <p class="title">HPB7混凝土湿喷机工程</p>
-                            <p class="subtitle">地铁湿喷成套设备</p>
+                            <p class="title">[field:title/]</p>
+                            <p class="subtitle">[field:shorttitle/]</p>
                             <p class="description hide">
-                              混凝土湿喷机采用低压低速旋涡气流输送,近距离喷射的工作原理,克服了堵管,脉冲,离析等问题.使喷射料流均匀,稳定。提高喷层质料。使用湿喷机进行喷射混凝土作业，可以大幅度降低粉尘浓度和回弹率，增大一次喷层厚度，提高生产效率，保证工程质量。立即购买
+                                [field:description function="cn_substr(@me,100)"/]...
                             </p>
                           </div>
                         </div>
                       </div>
                     </a>
                   </li>
-                  <li id="projectitem_1" class="projectitem wow">
-                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173881/" class="projectitem_content"
-                      target="_blank">
-                      <div class="projectitem_wrapper">
-                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074687807.jpg"
-                            alt="施工升降机 XCT3" width="650" height="385" /></div>
-                        <div class="project_info">
-                          <div>
-                            <p class="title">施工升降机 XCT3</p>
-                            <p class="subtitle">增加双泵合流功能</p>
-                            <p class="description hide">施工电梯通常称为施工升降机，但施工升降机包括的定义更宽广，施工平台也属于施工升降机系列</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li id="projectitem_2" class="projectitem wow">
-                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173879/" class="projectitem_content"
-                      target="_blank">
-                      <div class="projectitem_wrapper">
-                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074712302.jpg"
-                            alt="产品3D展厅 " width="650" height="385" /></div>
-                        <div class="project_info">
-                          <div>
-                            <p class="title">产品3D展厅 </p>
-                            <p class="subtitle">给您最震撼的视觉体验！</p>
-                            <p class="description hide">
-                              不可思议的错觉空间，炫酷的体感互动游戏，让你惊声尖叫的发型大爆炸，在这里所有的游客能够感受到3D错觉艺术馆所带来的无限乐趣。一场无与伦比的视觉之旅，一生一定要拍的照片，属于我们的青春纪念册！
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li id="projectitem_3" class="projectitem wow">
-                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173878/" class="projectitem_content"
-                      target="_blank">
-                      <div class="projectitem_wrapper">
-                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074801341.jpg"
-                            alt="HPB220混凝土湿喷机" width="650" height="385" /></div>
-                        <div class="project_info">
-                          <div>
-                            <p class="title">HPB220混凝土湿喷机</p>
-                            <p class="subtitle">隧道 护坡湿喷成套设备</p>
-                            <p class="description hide">
-                              在转子的每个料腔内有一个活塞、转子活塞与凸轮组成联动机构、在转子的转动过程中，通过凸轮、活塞杆、转子联动机构迫使活塞在料腔内上下移动、完成下料和喂料。</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li id="projectitem_4" class="projectitem wow">
-                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173882/" class="projectitem_content"
-                      target="_blank">
-                      <div class="projectitem_wrapper">
-                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/1504074634815.jpg"
-                            alt="帮您找产品" width="650" height="385" /></div>
-                        <div class="project_info">
-                          <div>
-                            <p class="title">帮您找产品</p>
-                            <p class="subtitle">提供全球信赖的工程机械解决方案</p>
-                            <p class="description hide">
-                              解决方案Solution就是针对某些已经体现出的，或者可以预期的问题、不足、缺陷、需求等等，所提出的一个解决整体问题的方案（建议书、计划表），同时能够确保加以有效的执行。</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li id="projectitem_5" class="projectitem wow">
-                    <a href="//mo004_4100.mo4.line1.uemo.net/project/post/173880/" class="projectitem_content"
-                      target="_blank">
-                      <div class="projectitem_wrapper">
-                        <div class="project_img"><img src="{dede:global.cfg_templets_skin/}/images/150407476376.jpg"
-                            alt="GD800D混凝土搅拌运输车" width="650" height="385" /></div>
-                        <div class="project_info">
-                          <div>
-                            <p class="title">GD800D混凝土搅拌运输车</p>
-                            <p class="subtitle">地铁湿喷成套设备</p>
-                            <p class="description hide">混凝土搅拌运输车或称搅拌车，是用来运送建筑用预拌混凝土的专用卡车；由于它的外形，也常被称为田螺车</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+                  {/dede:arclist}
+
                 </ul>
               </div>
               <!--wrapper-->
             </div>
             <!--projectSubList-->
-            <a href="//mo004_4100.mo4.line1.uemo.net/project/" class="more wow">MORE<i
+            <a title="more" href="{dede:global.cfg_basehost/}/productions/" class="more wow">MORE<i
                 class="fa fa-angle-right"></i></a>
           </div>
           <!--projectlist-->
@@ -449,83 +323,57 @@
           <a href="//mo004_4100.mo4.line1.uemo.net/team/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
         </div>
       </div>
+
       <div id="mpartner" class="module">
-        <div class="bgmask"></div>
+          <div class="bgmask"></div>
         <div class="content layoutslider">
-          <div class="header wow fw" data-wow-delay=".1s">
+          <div class="header wow fw animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
             <p class="title">合作伙伴</p>
-            <p class="subtitle">partner</p>
-          </div>
+                  <p class="subtitle">partner</p>
+            </div>
           <div class="module-content fw">
             <div class="wrapper">
-              <ul class="content_list" data-options-ease="u65e0" data-options-speed="1">
-                <li id="partneritem_0" class="wow"><a href="https://www.baidu.com/" title="logo name" target="_blank"
-                    class="wow slideInUp" data-wow-delay=".0s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1469524488299.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp"
-                    data-wow-delay=".1s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1456903258323.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp"
-                    data-wow-delay=".2s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1456902742463.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp"
-                    data-wow-delay=".3s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1439189029655.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp"
-                    data-wow-delay=".4s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1540287037879.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a><a title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".5s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1540287048369.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a><a title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".6s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1540287056529.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a><a title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".7s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1540287048369.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a></li>
-                <li id="partneritem_8" class="wow"><a href="https://www.baidu.com/" title="logo name" target="_blank"
-                    class="wow slideInUp" data-wow-delay=".8s">
-
-                    <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1439190821599.png" width="160"
-                        height="80" alt="logo name" /></p>
-                    <p class="par_title">logo name</p>
-
-                  </a></li>
-              </ul>
+              <div class="bx-wrapper" style="max-width: 980px;"><div class="bx-viewport" style="position: relative; overflow: hidden; width: 100%; height: 80px;">
+                
+                <ul class="content_list" data-options-ease="u65e0" data-options-speed="1" style="position: relative; width: 415%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                    <li id="partneritem_0" class="wow" data-wow-delay=".0s" style="width: 980px; list-style: none; position: relative; float: left; visibility: visible; animation-delay: 0s;">
+                      <a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".0s" style="visibility: visible; animation-delay: 0s; animation-name: slideInUp;">
+          
+                <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1469524488299.png" width="160" height="80" alt="logo name"></p>
+                <p class="par_title">logo name</p>
+          
+                </a>
+                
+                <a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
+          
+                <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1456903258323.png" width="160" height="80" alt="logo name"></p>
+                <p class="par_title">logo name</p>
+          
+                </a>
+                
+                <a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: slideInUp;">
+          
+                <p class="par_img"><img src="{dede:global.cfg_templets_skin/}/images/1456902742463.png" width="160" height="80" alt="logo name"></p>
+                <p class="par_title">logo name</p>
+          
+                </a>
+                
+                </li>
+                          <li id="partneritem_8" class="" style="width: 980px; list-style: none; position: relative; float: left;"><a href="https://www.baidu.com/" title="logo name" target="_blank" class="wow slideInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: slideInUp;">
+          
+                <p class="par_img"><img src="//resources.jsmo.xin/templates/upload/2/201508/1439190821599.png" width="160" height="80" alt="logo name"></p>
+                <p class="par_title">logo name</p>
+          
+                </a></li>
+                        </ul>
+                        
+                        
+              </div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href=""><i class="fa fa-angle-left"></i></a><a class="bx-next" href=""><i class="fa fa-angle-right"></i></a></div></div></div>
             </div>
           </div>
         </div>
       </div>
+
       <div id="mcontact" class="module">
         <div class="bgmask"></div>
         <div class="content">
@@ -574,9 +422,14 @@
     </div>
   </div>
   <div id="footer">
-    <p>{dede:global.cfg_copyright/}<a class="beian" href="http://www.miitbeian.gov.cn/"
-        style="display:inline; width:auto; color:#8e8e8e" target="_blank"> </a></p>
+    <p>{dede:global.cfg_powerby/}
+      <a class="beian" href="http://www.miitbeian.gov.cn/"
+      style="display:inline; width:auto; color:#8e8e8e" target="_blank"> 
+        {dede:global.cfg_beian/}
+      </a>
+    </p>
   </div>
+
   <div id="shares"><a id="sshare"><i class="fa fa-share-alt"></i></a><a
       href="http://service.weibo.com/share/share.php?appkey=3206975293&" target="_blank" id="sweibo"><i
         class="fa fa-weibo"></i></a><a href="javascript:;" id="sweixin"><i class="fa fa-weixin"></i></a><a

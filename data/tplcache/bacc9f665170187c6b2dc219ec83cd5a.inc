@@ -1,0 +1,1 @@
+<div style="background-image:url({dede:global.cfg_templets_skin/}/images/banner[field:id/].jpg);"></div>

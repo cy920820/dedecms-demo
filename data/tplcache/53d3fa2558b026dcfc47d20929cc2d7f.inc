@@ -1,0 +1,1 @@
+<div style="background-image:url(/templets/tpl/images/banner[field:id/].jpg);"></div>
