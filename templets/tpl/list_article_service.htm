@@ -1,0 +1,55 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="{dede:field name='keywords'/}">
+  <meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/lib.css">
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/style.css">
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/4100.css" id="ucssurl">
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery-1.11.3.min.js"></script>
+  <script>$(function () { if (!$("#mindex").length) { $('body').addClass('sscreen') } })</script>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/org.min.js" data-main="baseMain"></script>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/form.min.js"></script>
+  <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+</head>
+
+<body data-uid="" class="page_body">
+
+  <div class="bodyMask"> </div>
+
+  {dede:include filename="head.htm"/}
+
+  <div class="content">
+    <div class="header" id="plheader">
+      <p class="title">{dede:field.typename /}</p>
+      <p class="subtitle">Media point of view</p>
+    </div>
+
+    <ul id="category">
+      <li><a href="{dede:global.cfg_basehost/}/youzhifuwu">全部</a></li>
+
+      {dede:channel row='10' type ='son'}
+
+      <li><a href="[field:typelink/]">[field:typename/]</a></li>
+
+      {/dede:channel}
+    </ul>
+
+    <div id="projectlist" class="module-content">
+      <div class="wrapper" style="width: 1000px; margin: 0 auto;">
+        <div class="content_list flex-column-center">
+          {dede:field.content/}
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  {dede:include filename="footer.htm"/}

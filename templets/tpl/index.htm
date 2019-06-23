@@ -27,14 +27,15 @@
   <div id="header" class="index_nav">
     <div class="content">
       <a href="{dede:global.cfg_basehost/}" id="logo">
-        <img src="{dede:global.cfg_templets_skin/}/images/1505115294665.png"
+        <img src="{dede:global.cfg_templets_skin/}/images/logo.png"
           height="40" />
         </a>
       <ul id="nav">
 
-        <li class="navitem"><a class="nav-a  active " href="{dede:global.cfg_basehost/}" target="_self"><span data-title="首页">首页</span></a></li>
+        <li class="navitem"><a class="nav-a active" href="{dede:global.cfg_basehost/}" target="_self"><span data-title="首页">首页</span></a></li>
 
-        {dede:channel row='4' type="top" typeid='1,2,3,4'}
+        {dede:channel row='7' type="top" typeid='1,2,3,10,11,12,4'}
+        
         <li class="navitem"><a class="nav-a " href="[field:typelink/]" target="_self"><span
               data-title="[field:typename/]">[field:typename/]</span></a></li>
         {/dede:channel}
@@ -59,10 +60,10 @@
 
         <ul class="slider" data-options-height="650" data-options-auto="0" data-options-mode="1" data-options-pause="5"
           data-options-ease="ease-out">
-          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/150405681052.jpg)"
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/banner-index-2.jpg)"
             class="active">
             <div id="tempImage_0"></div><img style="display:none"
-              src="{dede:global.cfg_templets_skin/}/images/150405681052.jpg" alt="" />
+              src="{dede:global.cfg_templets_skin/}/images/banner-index-2.jpg" alt="" />
             <div class="mask"></div><a target="_blank" href="javascript:;">
               <div>
                 <p class="title ellipsis"></p>
@@ -70,9 +71,9 @@
               <div class="sliderArrow fa fa-angle-down"></div>
             </a>
           </li>
-          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/1504056531662.jpg)">
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/banner-index-1.jpg)">
             <div id="tempImage_1"></div><img style="display:none"
-              src="{dede:global.cfg_templets_skin/}/images/1504056531662.jpg" alt="" />
+              src="{dede:global.cfg_templets_skin/}/images/banner-index-1.jpg" alt="" />
             <div class="mask"></div><a target="_blank" href="javascript:;">
               <div>
                 <p class="title ellipsis"></p>
@@ -96,7 +97,7 @@
               <ul class="content_list" data-options-sliders="3" data-options-margin="20" data-options-ease="u65e0"
                 data-options-speed="0" data-options-mode="horizontal" data-options-wheel="0">
 
-                {dede:arclist row='3' titlelen='35' orderby ='pubdate'   typeid='3'  infolen='100'  imgwidth='370'  imgheight='190'  }
+                {dede:list row='3' titlelen='35' orderby ='pubdate'   typeid='3'  infolen='100'  imgwidth='370'  imgheight='190'  }
                 <li id="newsitem_0" class="wow newstitem left"><a class="newscontent" target="_blank"
                     href="[field:arcurl/]">
                     <div class="news_wrapper">
@@ -115,11 +116,12 @@
                   <a href="[field:arcurl/]" target="_blank" class="details">more<i
                       class="fa fa-angle-right"></i></a>
                 </li>
-                {/dede:arclist}
+                {/dede:list}
 
               </ul>
             </div>
           </div>
+          
           <div class="clear"></div>
           <a href="{dede:global.cfg_basehost/}/media_viewport/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
           <div style="height:0">&nbsp;</div>
@@ -132,11 +134,13 @@
             <p class="title">产品中心</p>
             <p class="subtitle">Products Center</p>
           </div>
+
           <div id="category" class="hide wow">
-            {dede:channel  row='3'  type ='son'  typeid ='2'  }
+            {dede:channel  row='10'  type ='son'  typeid ='2'  }
             <a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>
             {/dede:channel}
           </div>
+          
           <!--yyLayout masonry-->
           <div class="module-content" id="projectlist">
             <div class="projectSubList" id="projectSubList_">
@@ -148,13 +152,13 @@
                 <ul class="content_list" data-options-sliders="12" data-options-margin="10" data-options-ease="u65e0"
                   data-options-speed="0">
 
-                  {dede:arclist row='6' typeid='2' titlelen='30' orderby ='pubdate'  }
+                  {dede:arclist row='10' typeid='2' titlelen='30' orderby ='pubdate'  }
                   <li id="projectitem_0" class="projectitem wow">
                     <a href="[field:arcurl/]" class="projectitem_content"
                       target="_blank">
                       <div class="projectitem_wrapper">
                         <div class="project_img"><img src="[field:picname/]"
-                            alt="[field:title/]" width="650" height="385" /></div>
+                            alt="[field:title/]" width="200" height="220" /></div>
                         <div class="project_info">
                           <div>
                             <p class="title">[field:title/]</p>
@@ -183,13 +187,14 @@
       </div>
       <!--project-->
       <div id="mservice" class="module bgShow"
-        style="background-image:url({dede:global.cfg_templets_skin/}/images/1504076585336.jpg);">
+        style="background-image:url({dede:global.cfg_templets_skin/}/images/service-support.jpg);">
         <div class="bgmask"></div>
         <div class="content layoutnone">
           <div class="header wow fw" data-wow-delay=".1s">
             <p class="title">服务支持</p>
             <p class="subtitle">service support</p>
           </div>
+
           <div class="module-content fw" id="servicelist">
             <div class="wrapper">
               <ul class="content_list" data-options-sliders="3" data-options-margin="50" data-options-ease="u65e0"
@@ -199,19 +204,20 @@
                     <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/1504077608955.jpg"
                         width="320" height="120" alt="再制造" /></p>
                     <div class="service_info">
-                      <p class="title">再制造</p>
+                      <p class="title">售后</p>
                       <p class="description">业务咨询</p>
                     </div>
                   </a>
                   <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16083/" target="_blank" class="details">more<i
                       class="fa fa-angle-right"></i></a>
                 </li>
+
                 <li id="serviceitem_1" class="serviceitem wow"><a
                     href="//mo004_4100.mo4.line1.uemo.net/service/post/16082/" target="_blank">
                     <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/150407771280.jpg"
                         width="320" height="120" alt="配件订购" /></p>
                     <div class="service_info">
-                      <p class="title">配件订购</p>
+                      <p class="title">产品订购</p>
                       <p class="description">填写您所需配件信息
                       </p>
                     </div>
@@ -219,25 +225,28 @@
                   <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16082/" target="_blank" class="details">more<i
                       class="fa fa-angle-right"></i></a>
                 </li>
+
                 <li id="serviceitem_2" class="serviceitem wow"><a
                     href="//mo004_4100.mo4.line1.uemo.net/service/post/16081/" target="_blank">
                     <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/1504077693786.jpg"
                         width="320" height="120" alt="金融服务" /></p>
                     <div class="service_info">
-                      <p class="title">金融服务</p>
-                      <p class="description">提供融资租赁服务</p>
+                      <p class="title">联系我们</p>
+                      <p class="description">提供各种咨询服务</p>
                     </div>
                   </a>
                   <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16081/" target="_blank" class="details">more<i
                       class="fa fa-angle-right"></i></a>
                 </li>
+
               </ul>
             </div>
           </div>
           <div class="clear"></div>
-          <a href="//mo004_4100.mo4.line1.uemo.net/service/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
+          <a href="{dede:global.cfg_basehost/}/youzhifuwu/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
         </div>
       </div>
+
       <div id="mpage" class="module bgShow"
         style="background-image:url({dede:global.cfg_templets_skin/}/images/1505183489906.jpg);">
         <div class="bgmask"></div>
@@ -255,7 +264,7 @@
                       股份有限公司(ZPMC)是重型装备制造行业的知名企业，为国有控股A、B股上市公司，控股方为世界500强之一的中国交通建设股份有限公司。
                     </p>
                   </div>
-                  <a href="//mo004_4100.mo4.line1.uemo.net/page/72684/" class="more wow" data-wow-delay=".5s">MORE<i
+                  <a href="{dede:global.cfg_basehost/}/contact_us/" class="more wow" data-wow-delay=".5s">MORE<i
                       class="fa fa-angle-right"></i></a>
                   <div class="fimg wow"
                     style="background-image:url({dede:global.cfg_templets_skin/}/images/1504149457291.jpg)">
@@ -266,7 +275,8 @@
           </div>
         </div>
       </div>
-      <div id="mteam" class="module">
+
+      <!-- <div id="mteam" class="module">
         <div class="bgmask"></div>
         <div class="content layoutslider">
           <div class="header wow">
@@ -322,7 +332,7 @@
           <div class="clear"></div>
           <a href="//mo004_4100.mo4.line1.uemo.net/team/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
         </div>
-      </div>
+      </div> -->
 
       <div id="mpartner" class="module">
           <div class="bgmask"></div>

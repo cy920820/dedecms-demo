@@ -1,21 +1,22 @@
 <div id="header" class="index_nav">
   <div class="content">
     <a href="{dede:global.cfg_basehost/}" id="logo">
-      <img src="{dede:global.cfg_templets_skin/}/images/1505115294665.png"
-        height="40" />
-      </a>
+      <img src="{dede:global.cfg_templets_skin/}/images/logo.png" height="40" />
+    </a>
+
     <ul id="nav">
 
-      <li class="navitem"><a class="nav-a " href="{dede:global.cfg_basehost/}" target="_self"><span data-title="首页">首页</span></a></li>
+      <li class="navitem"><a class="nav-a" href="{dede:global.cfg_basehost/}" target="_self"><span
+            data-title="首页">首页</span></a></li>
 
-      {dede:channel row='4' type="top" typeid='1,2,3,4'}
+      {dede:channel row='7' type="top" typeid='1,2,3,10,11,12,4'}
 
       <li class="navitem">
         <a class="nav-a " href="[field:typelink/]" target="_self">
           <span data-title="[field:typename/]">[field:typename/]</span>
         </a>
       </li>
-      
+
       {/dede:channel}
     </ul>
 
@@ -30,8 +31,22 @@
 
 <div id="sitecontent">
 
-    <div class="npagePage Pageyemian page_72684 " id="page_none">  <div id="banner" class="">
-            {dede:type}
-            <div style="background-image:url(/templets/tpl/images/banner[field:id/].jpg);"></div>
-            {/dede:type}
-          </div>
+  <div class="npagePage Pageyemian page_72684 " id="page_none">
+    <div id="banner" class="">
+      {dede:type}
+      <div style="background-image:url(/templets/tpl/images/banner[field:id/].jpg);"></div>
+      {/dede:type}
+    </div>
+
+    <script type="text/javascript">
+
+      var myNav = document.getElementById("nav").getElementsByTagName("a");
+      var currenturl = document.location.href;
+      for (var i = 0; i < myNav.length; i++) {
+        var aurl = myNav[i].getAttribute("href");
+        myNav[i].className = 'nav-a'
+        if (currenturl === location.origin + aurl) {
+          myNav[i].className = "nav-a active";
+        }
+      }
+    </script>

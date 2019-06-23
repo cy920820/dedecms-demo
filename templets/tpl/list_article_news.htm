@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="{dede:field name='keywords'/}">
+  <meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" type="text/css"
+    href="{dede:global.cfg_templets_skin/}/style/lib.css">
+  <link rel="stylesheet" type="text/css"
+    href="{dede:global.cfg_templets_skin/}/style/style.css">
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/4100.css" id="ucssurl">
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery-1.11.3.min.js"></script>
+  <script>$(function () { if (!$("#mindex").length) { $('body').addClass('sscreen') } })</script>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/org.min.js"
+    data-main="baseMain"></script>
+  <script type="text/javascript"
+    src="{dede:global.cfg_templets_skin/}/style/form.min.js"></script>
+  <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+</head>
+<body data-uid="" class="page_body">
+  <div class="bodyMask"> </div>
+  {dede:include filename="head.htm"/}
+
+      <div class="content">
+        <div class="header">
+          <p class="title">{dede:field.typename /}</p>
+          <p class="subtitle">Media point of view</p>
+        </div>
+        <div id="category">
+          <a href="{dede:global.cfg_basehost/}/media_viewport">全部</a>
+
+          {dede:channel row='10' type ='son'}
+          <a href="[field:typelink/]">[field:typename/]</a>
+          {/dede:channel}
+
+          </div>
+
+
+        <div id="newslist">
+
+          <div class="wrapper">
+
+            {dede:list pagesize ='6'}
+              <div id="newsitem_0" class="wow newstitem left" style="visibility: visible;">
+                <a class="newscontent" target="_blank" href="[field:arcurl/]">
+                  <div class="news_wrapper">
+                    <div class="newsbody">
+                      <p class="date"><span class="md">[field:pubdate function="MyDate('y',@me)"/]<span>-</span></span><span class="year">[field:pubdate function="MyDate('m-d',@me)"/]</span></p>
+                      <p class="title">[field:title/]</p>
+                      <p class="subtitle hide">[field:shorttitle/]</p>
+                      <div class="separator"></div>
+                      <p class="description">[field:description function="cn_substr(@me,140)"/]...</p>
+                    </div>
+                  </div>
+                  <div class="newsimg" style="background-image:url([field:picname/])"></div>
+                </a>
+              </div>
+            {/dede:list}
+
+          </div>
+        </div>
+
+        <div class="clear"></div>
+        <div id="pages">
+          <div class="dede_pages">
+            <ul class=pagelist>{dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize="1"/}</ul>
+          </div>
+        </div>
+      </div>
+
+  {dede:include filename="footer.htm"/}
