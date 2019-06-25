@@ -7,18 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <meta name="author" content="YY-MO">
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black" name="apple-mobile-web-app-status-bar-style" />
   <meta content="telephone=no" name="format-detection" />
   <link rel="stylesheet" type="text/css" href="/templets/tpl/style/lib.css">
   <link rel="stylesheet" type="text/css" href="/templets/tpl/style/style.css">
-  <link rel="stylesheet" type="text/css" href="/templets/tpl/style/4100.css">
+  <link rel="stylesheet" type="text/css" href="/templets/tpl/style/main.css">
   <script type="text/javascript" src="/templets/tpl/style/jquery-1.11.3.min.js"></script>
   <script>$(function () { if (!$("#mindex").length) { $('body').addClass('sscreen') } })</script>
   <script type="text/javascript" src="/templets/tpl/style/org.min.js" data-main="baseMain"></script>
   <script type="text/javascript" src="/templets/tpl/style/form.min.js"></script>
-  <title>联系我们-zytb</title>
+  <title>联系我们-北京康耐琪润滑油有限公司</title>
 
 </head>
 
@@ -28,12 +27,13 @@
   <div id="header" class="index_nav">
   <div class="content">
     <a href="http://127.0.0.1" id="logo">
-      <img src="/templets/tpl/images/1505115294665.png"
-        height="40" />
-      </a>
+      <img src="/templets/tpl/images/logo.png" height="40" />
+    </a>
+
     <ul id="nav">
 
-      <li class="navitem"><a class="nav-a " href="http://127.0.0.1" target="_self"><span data-title="首页">首页</span></a></li>
+      <li class="navitem"><a class="nav-a" href="http://127.0.0.1" target="_self"><span
+            data-title="首页">首页</span></a></li>
 
       
 
@@ -42,7 +42,7 @@
           <span data-title="关于我们">关于我们</span>
         </a>
       </li>
-      
+
       
 
       <li class="navitem">
@@ -50,7 +50,7 @@
           <span data-title="产品中心">产品中心</span>
         </a>
       </li>
-      
+
       
 
       <li class="navitem">
@@ -58,7 +58,31 @@
           <span data-title="媒体观点">媒体观点</span>
         </a>
       </li>
+
       
+
+      <li class="navitem">
+        <a class="nav-a " href="/liansuojiameng/" target="_self">
+          <span data-title="连锁加盟">连锁加盟</span>
+        </a>
+      </li>
+
+      
+
+      <li class="navitem">
+        <a class="nav-a " href="/youzhifuwu/" target="_self">
+          <span data-title="优质服务">优质服务</span>
+        </a>
+      </li>
+
+      
+
+      <li class="navitem">
+        <a class="nav-a " href="/huanbaoxinxigongkai/" target="_self">
+          <span data-title="环保信息公开">环保信息公开</span>
+        </a>
+      </li>
+
       
 
       <li class="navitem">
@@ -66,7 +90,7 @@
           <span data-title="联系我们">联系我们</span>
         </a>
       </li>
-      
+
       
     </ul>
 
@@ -81,10 +105,23 @@
 
 <div id="sitecontent">
 
-    <div class="npagePage Pageyemian page_72684 " id="page_none">  <div id="banner" class="">
-            <div style="background-image:url(/templets/tpl/images/banner4.jpg);"></div>
-          </div>
+  <div class="npagePage Pageyemian page_72684 " id="page_none">
+    <div id="banner" class="">
+      <div style="background-image:url(/templets/tpl/images/banner4.jpg);"></div>
+    </div>
 
+    <script type="text/javascript">
+
+      var myNav = document.getElementById("nav").getElementsByTagName("a");
+      var currenturl = document.location.href;
+      for (var i = 0; i < myNav.length; i++) {
+        var aurl = myNav[i].getAttribute("href");
+        myNav[i].className = 'nav-a'
+        if (currenturl === location.origin + aurl) {
+          myNav[i].className = "nav-a active";
+        }
+      }
+    </script>
 
 
   <div class="content ">
@@ -94,99 +131,76 @@
     </div>
 
     <div class="fw postbody" id="postbody">
-      <hr />
-<table style="padding: 0px; margin: 0px; color: rgb(106, 106, 106); font-family: Arial, 微软雅黑; font-size: 13px;">
-	<tbody style="padding: 0px; margin: 0px;">
-		<tr class="firstRow" style="padding: 0px; margin: 0px;">
-			<td style="padding: 0px; margin: 0px; word-break: break-all;" valign="top" width="320">
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					<strong style="padding: 0px; margin: 0px;"><span style="padding: 0px; margin: 0px; font-size: 16px;">网站建设文化传播有限公司</span></strong></p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					<span style="padding: 0px; margin: 0px; font-size: 12px; color: rgb(165, 165, 165);">Website construction culture Communication Co., Ltd.</span></p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					&nbsp;</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					总部地址：中国地区XX分区5A写字楼8-88室</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					总部电话：400-888-8888</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					电子邮箱：website@qq.com</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					邮政编码：100000</p>
-			</td>
-			<td style="padding: 0px; margin: 0px;" valign="top" width="50">
-				&nbsp;</td>
-			<td style="padding: 0px; margin: 0px; word-break: break-all;" valign="top" width="320">
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					<strong style="padding: 0px; margin: 0px;"><span style="padding: 0px; margin: 0px; font-size: 16px;">深圳网站建设文化传播有限公司</span></strong></p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					<span style="padding: 0px; margin: 0px; font-size: 12px; color: rgb(165, 165, 165);">Website construction culture Communication Co., Ltd.</span></p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					&nbsp;</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					总部地址：中国地区XX分区5A写字楼8-88室</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					总部电话：400-888-8888</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					电子邮箱：website@qq.com</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					邮政编码：100000</p>
-			</td>
-			<td style="padding: 0px; margin: 0px;" valign="top" width="50">
-				&nbsp;</td>
-			<td style="padding: 0px; margin: 0px; word-break: break-all;" valign="top" width="320">
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					<strong style="padding: 0px; margin: 0px;"><span style="padding: 0px; margin: 0px; font-size: 16px;">香港网站建设文化传播有限公司</span></strong></p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					<span style="padding: 0px; margin: 0px; font-size: 12px; color: rgb(165, 165, 165);">Website construction culture Communication Co., Ltd.</span></p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					&nbsp;</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					总部地址：中国地区XX分区5A写字楼8-88室</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					总部电话：400-888-8888</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					电子邮箱：website@qq.com</p>
-				<p style="padding: 0px; margin: 0px; overflow-wrap: break-word; word-break: normal;">
-					邮政编码：100000</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
+      <div id="proinfo" style="margin: 36px 0px 0px; color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;microsoft yahei&quot;, tahoma;">
+	<h1 class="ContactPage-title" style="margin: 0px; padding: 0px; font-size: 14px; outline: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">
+		&nbsp;</h1>
+	<div>
+		&nbsp; &nbsp; &nbsp; &nbsp;北京康耐琪润滑油有限公司是国内最具影响力的润滑油及汽车横向用品专业制造商之一，专业从事润滑油科研、开发、生产加工以及销售的技术服务，总部位于中国北京。其产品主要有英国授权品牌康耐琪全系列润滑油以及自主品牌劲悍全系列润滑油和凯奈系列润滑油。产品涵盖液压油、齿轮油、机械油、拉伸油、防锈油、导热油、导轨油、气缸油、金属加工油、热处理油、设备润滑油等数百种品项。经过十余年润滑油行业成功经验的积累，如今的中韵天霸已经成为英国康耐琪润滑油中国大陆地区的合作伙伴，拥有唯一的生产、销售权。</div>
+	<div class="ContactPage-para" style="margin-top: 2em; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px;">
+		公司名称：<span style="font-family: 微软雅黑, &quot;microsoft yahei&quot;, tahoma;">北京</span><span style="font-family: 微软雅黑, &quot;microsoft yahei&quot;, tahoma;">康耐琪</span><span style="font-family: 微软雅黑, &quot;microsoft yahei&quot;, tahoma;">润滑油有限公司</span><br />
+		地址：北京市房山区阎村镇吴庄村西500米<br />
+		电话：010-61308503<br />
+		传真：010-89318255<br />
+		邮编：102413</div>
+	<div class="ContactPage-para" style="margin-top: 2em; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px;">
+		请通过以下方式联系我们：）</div>
+	<div class="ContactPage-para" style="margin-top: 2em; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px;">
+		市场合作：xxx<a href="mailto:bd@zhihu.com" style="text-decoration-line: none; color: rgb(34, 34, 34); -webkit-tap-highlight-color: rgba(225, 225, 225, 0.5);">@xxx.com</a></div>
+	<div class="ContactPage-para" style="margin-top: 2em; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px;">
+		客服邮箱：<a href="mailto:media@zhihu.com" style="text-decoration-line: none; color: rgb(34, 34, 34); -webkit-tap-highlight-color: rgba(225, 225, 225, 0.5);">media@xxx.com</a></div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 
     </div>
   </div>
 
-  <div id="footer">
-    <p>zytb
-      <a class="beian" href="http://www.miitbeian.gov.cn/"
-      style="display:inline; width:auto; color:#8e8e8e" target="_blank"> 
-        2323
-      </a>
-    </p>
-  </div>
-
-  <div id="shares"><a id="sshare"><i class="fa fa-share-alt"></i></a><a
-  href="http://service.weibo.com/share/share.php?appkey=3206975293&" target="_blank" id="sweibo"><i
-    class="fa fa-weibo"></i></a><a href="javascript:;" id="sweixin"><i class="fa fa-weixin"></i></a><a
-  href="javascript:;" id="gotop"><i class="fa fa-angle-up"></i></a></div>
-<div class="fixed" id="fixed_weixin">
-<div class="fixed-container">
-  <div id="qrcode"></div>
-  <p>扫描二维码分享到微信</p>
+  <!-- footer section -->
+<div id="footer">
+  <p>Copyright©2009-2016 All Rights Reserved 北京康耐琪润滑油有限公司 
+    <a class="beian" href="http://www.miitbeian.gov.cn/" style="display:inline; width:auto; color:#8e8e8e"
+      target="_blank">
+      备案号：京ICP备14061986号-1
+    </a>
+  </p>
 </div>
+
+<!-- share -->
+<div id="shares"><a id="sshare"><i class="fa fa-share-alt"></i></a><a
+    href="http://service.weibo.com/share/share.php?appkey=3206975293&" target="_blank" id="sweibo"><i
+      class="fa fa-weibo"></i></a><a href="javascript:;" id="sweixin"><i class="fa fa-weixin"></i></a><a
+    href="javascript:;" id="gotop"><i class="fa fa-angle-up"></i></a></div>
+<div class="fixed" id="fixed_weixin">
+  <div class="fixed-container">
+    <div id="qrcode"></div>
+    <p>扫描二维码分享到微信</p>
+  </div>
 </div>
 <div id="online_open"><i class="fa fa-comments-o"></i></div>
 <div id="online_lx">
-<div id="olx_head">在线咨询<i class="fa fa-times fr" id="online_close"></i></div>
-<ul id="olx_qq">
-  <li><a href="tencent://message/?uin=40080000&Site=uelike&Menu=yes"><i class="fa fa-qq"></i>40080000</a></li>
-</ul>
-<div id="olx_tel">
-  <div><i class="fa fa-phone"></i>联系电话</div>
-  <p>400-888-8888<br /></p>
-</div>
+  <div id="olx_head">在线咨询<i class="fa fa-times fr" id="online_close"></i></div>
+  <ul id="olx_qq">
+    <li><a href="tencent://message/?uin=40080000&Site=uelike&Menu=yes"><i class="fa fa-qq"></i>40080000</a></li>
+  </ul>
+  <div id="olx_tel">
+    <div><i class="fa fa-phone"></i>联系电话</div>
+    <p>010-6130-8503<br /></p>
+  </div>
 </div>
 </body>
 
