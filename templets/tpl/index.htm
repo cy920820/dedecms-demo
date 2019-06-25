@@ -7,13 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="keywords" content="{dede:global.cfg_keywords/}">
   <meta name="description" content="{dede:global.cfg_description/}">
-  <meta name="author" content="YY-MO">
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black" name="apple-mobile-web-app-status-bar-style" />
   <meta content="telephone=no" name="format-detection" />
   <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/lib.css">
   <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/style.css">
-  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/4100.css">
+  <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/main.css">
   <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery-1.11.3.min.js"></script>
   <script>$(function () { if (!$("#mindex").length) { $('body').addClass('sscreen') } })</script>
   <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/org.min.js" data-main="indexMain"></script>
@@ -89,7 +88,7 @@
         <div class="content layoutnone">
           <div class="header wow">
             <p class="title">媒体观点</p>
-            <p class="subtitle">Media point of view</p>
+            <p class="subtitle">Media Point Of View</p>
           </div>
 
           <div class="module-content" id="newslist">
@@ -97,8 +96,9 @@
               <ul class="content_list" data-options-sliders="3" data-options-margin="20" data-options-ease="u65e0"
                 data-options-speed="0" data-options-mode="horizontal" data-options-wheel="0">
 
-                {dede:list row='3' titlelen='35' orderby ='pubdate'   typeid='3'  infolen='100'  imgwidth='370'  imgheight='190'  }
-                <li id="newsitem_0" class="wow newstitem left"><a class="newscontent" target="_blank"
+                {dede:arclist row='3' titlelen='35' orderby ='pubdate'   typeid='3'  infolen='100'  imgwidth='370'  imgheight='190'  }
+                <li id="newsitem_0" class="wow newstitem left">
+                  <a class="newscontent" target="_blank"
                     href="[field:arcurl/]">
                     <div class="news_wrapper">
                       <div class="newsbody">
@@ -116,7 +116,7 @@
                   <a href="[field:arcurl/]" target="_blank" class="details">more<i
                       class="fa fa-angle-right"></i></a>
                 </li>
-                {/dede:list}
+                {/dede:arclist}
 
               </ul>
             </div>
@@ -191,8 +191,8 @@
         <div class="bgmask"></div>
         <div class="content layoutnone">
           <div class="header wow fw" data-wow-delay=".1s">
-            <p class="title">服务支持</p>
-            <p class="subtitle">service support</p>
+            <p class="title">优质服务</p>
+            <p class="subtitle">Quality Service</p>
           </div>
 
           <div class="module-content fw" id="servicelist">
@@ -200,7 +200,7 @@
               <ul class="content_list" data-options-sliders="3" data-options-margin="50" data-options-ease="u65e0"
                 data-options-speed="0">
                 <li id="serviceitem_0" class="serviceitem wow"><a
-                    href="//mo004_4100.mo4.line1.uemo.net/service/post/16083/" target="_blank">
+                    href="{dede:global.cfg_basehost/}/youzhifuwu/shouhoufuwu/" target="_blank">
                     <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/1504077608955.jpg"
                         width="320" height="120" alt="再制造" /></p>
                     <div class="service_info">
@@ -208,35 +208,34 @@
                       <p class="description">业务咨询</p>
                     </div>
                   </a>
-                  <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16083/" target="_blank" class="details">more<i
+                  <a href="{dede:global.cfg_basehost/}/youzhifuwu/shouhoufuwu/" target="_blank" class="details">more<i
                       class="fa fa-angle-right"></i></a>
                 </li>
 
                 <li id="serviceitem_1" class="serviceitem wow"><a
-                    href="//mo004_4100.mo4.line1.uemo.net/service/post/16082/" target="_blank">
+                    href="{dede:global.cfg_basehost/}/youzhifuwu/chanpindinggou/" target="_blank">
                     <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/150407771280.jpg"
                         width="320" height="120" alt="配件订购" /></p>
                     <div class="service_info">
                       <p class="title">产品订购</p>
-                      <p class="description">填写您所需配件信息
-                      </p>
+                      <p class="description">填写您所需产品信息</p>
                     </div>
                   </a>
-                  <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16082/" target="_blank" class="details">more<i
-                      class="fa fa-angle-right"></i></a>
+                  <a href="{dede:global.cfg_basehost/}/youzhifuwu/chanpindinggou/" target="_blank" class="details">more<i
+                    class="fa fa-angle-right"></i></a>
                 </li>
 
                 <li id="serviceitem_2" class="serviceitem wow"><a
-                    href="//mo004_4100.mo4.line1.uemo.net/service/post/16081/" target="_blank">
+                    href="{dede:global.cfg_basehost/}/liansuojiameng" target="_blank">
                     <p class="service_img"><img src="{dede:global.cfg_templets_skin/}/images/1504077693786.jpg"
                         width="320" height="120" alt="金融服务" /></p>
                     <div class="service_info">
                       <p class="title">联系我们</p>
-                      <p class="description">提供各种咨询服务</p>
+                      <p class="description">提供咨询、加盟服务</p>
                     </div>
                   </a>
-                  <a href="//mo004_4100.mo4.line1.uemo.net/service/post/16081/" target="_blank" class="details">more<i
-                      class="fa fa-angle-right"></i></a>
+                  <a href="{dede:global.cfg_basehost/}/liansuojiameng" target="_blank" class="details">more<i
+                    class="fa fa-angle-right"></i></a>
                 </li>
 
               </ul>
@@ -257,14 +256,14 @@
                 <li>
                   <div class="header wow" data-wow-delay=".2s">
                     <p class="title">了解我们</p>
-                    <p class="subtitle">understand us</p>
+                    <p class="subtitle">Understand Us</p>
                   </div>
                   <div class="des-wrap">
                     <p class="description wow" data-wow-delay=".3s">
-                      股份有限公司(ZPMC)是重型装备制造行业的知名企业，为国有控股A、B股上市公司，控股方为世界500强之一的中国交通建设股份有限公司。
+                      {dede:global.cfg_company_intro/}
                     </p>
                   </div>
-                  <a href="{dede:global.cfg_basehost/}/contact_us/" class="more wow" data-wow-delay=".5s">MORE<i
+                  <a href="{dede:global.cfg_basehost/}/about_us/" class="more wow" data-wow-delay=".5s">MORE<i
                       class="fa fa-angle-right"></i></a>
                   <div class="fimg wow"
                     style="background-image:url({dede:global.cfg_templets_skin/}/images/1504149457291.jpg)">
@@ -402,9 +401,9 @@
               <p class="ellipsis fax"><span>传真：</span>{dede:global.cfg_fax/}</p>
               <p class="ellipsis email"><span>邮箱：</span>{dede:global.cfg_email/}</p>
               <div><a class="fl" target="_blank" href="http://weibo.com/web"><i class="fa fa-weibo"></i></a><a
-                  class="fl" target="_blank" href="tencent://message/?uin=40080000&Site=uemo&Menu=yes"><i
+                  class="fl" target="_blank" href="tencent://message/?uin={dede:global.cfg_qq/}&Site=uemo&Menu=yes"><i
                     class="fa fa-qq"></i></a> <a id="mpbtn" class="fl"
-                  href="{dede:global.cfg_templets_skin/}/images/1438424052624.jpg"><i class="fa fa-weixin"></i></a>
+                  href="{dede:global.cfg_templets_skin/}/images/qr_wechat.jpg"><i class="fa fa-weixin"></i></a>
               </div>
             </div>
             <div id="contactform" class="fr wow" data-wow-delay=".2s">
