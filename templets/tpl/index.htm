@@ -333,7 +333,7 @@
         </div>
       </div> -->
 
-      <div id="mpartner" class="module">
+      <!-- <div id="mpartner" class="module">
           <div class="bgmask"></div>
         <div class="content layoutslider">
           <div class="header wow fw animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
@@ -381,7 +381,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div id="mcontact" class="module">
         <div class="bgmask"></div>
@@ -400,10 +400,20 @@
               <p class="ellipsis mobile"><span>手机：</span>{dede:global.cfg_mobile/}</p>
               <p class="ellipsis fax"><span>传真：</span>{dede:global.cfg_fax/}</p>
               <p class="ellipsis email"><span>邮箱：</span>{dede:global.cfg_email/}</p>
-              <div><a class="fl" target="_blank" href="http://weibo.com/web"><i class="fa fa-weibo"></i></a><a
-                  class="fl" target="_blank" href="tencent://message/?uin={dede:global.cfg_qq/}&Site=uemo&Menu=yes"><i
-                    class="fa fa-qq"></i></a> <a id="mpbtn" class="fl"
-                  href="{dede:global.cfg_templets_skin/}/images/qr_wechat.jpg"><i class="fa fa-weixin"></i></a>
+              <div>
+                <a class="fl" target="_blank" href="javascript:;"><i class="fa fa-weibo"></i></a>
+                <!-- <a class="fl" target="_blank" href="tencent://message/?uin={dede:global.cfg_qq/}&Site=uemo&Menu=yes">
+                  <i class="fa fa-qq"></i>
+                </a> -->
+                <a class="fl" target="_blank" href="javascript:;">
+                  <i class="fa fa-qq"></i>
+                </a>
+                <!-- <a id="mpbtn" class="fl" href="{dede:global.cfg_templets_skin/}/images/qr_wechat.jpg">
+                  <i class="fa fa-weixin"></i>
+                </a> -->
+                <!-- <a id="mpbtn" class="fl" href="javascript:;">
+                  <i class="fa fa-weixin"></i>
+                </a> -->
               </div>
             </div>
             <div id="contactform" class="fr wow" data-wow-delay=".2s">
@@ -430,36 +440,5 @@
       </div>
     </div>
   </div>
-  <div id="footer">
-    <p>{dede:global.cfg_powerby/}
-      <a class="beian" href="http://www.miitbeian.gov.cn/"
-      style="display:inline; width:auto; color:#8e8e8e" target="_blank"> 
-        {dede:global.cfg_beian/}
-      </a>
-    </p>
-  </div>
 
-  <div id="shares"><a id="sshare"><i class="fa fa-share-alt"></i></a><a
-      href="http://service.weibo.com/share/share.php?appkey=3206975293&" target="_blank" id="sweibo"><i
-        class="fa fa-weibo"></i></a><a href="javascript:;" id="sweixin"><i class="fa fa-weixin"></i></a><a
-      href="javascript:;" id="gotop"><i class="fa fa-angle-up"></i></a></div>
-  <div class="fixed" id="fixed_weixin">
-    <div class="fixed-container">
-      <div id="qrcode"></div>
-      <p>扫描二维码分享到微信</p>
-    </div>
-  </div>
-  <div id="online_open"><i class="fa fa-comments-o"></i></div>
-  <div id="online_lx">
-    <div id="olx_head">在线咨询<i class="fa fa-times fr" id="online_close"></i></div>
-    <ul id="olx_qq">
-      <li><a href="tencent://message/?uin=40080000&Site=uelike&Menu=yes"><i class="fa fa-qq"></i>40080000</a></li>
-    </ul>
-    <div id="olx_tel">
-      <div><i class="fa fa-phone"></i>联系电话</div>
-      <p>400-888-8888<br /></p>
-    </div>
-  </div>
-</body>
-
-</html>
+  {dede:include filename="footer.htm"/}
