@@ -23,4 +23,5 @@ $cfg_Cs[28]=array(2,1,1,'5bq36ICQ55Cq5ray5Y6L5rK5');
 $cfg_Cs[29]=array(2,1,1,'5bq36ICQ55Cq6b2/6L2u5rK5');
 $cfg_Cs[30]=array(2,1,1,'5bq36ICQ55Cq5ram5ruR6ISC');
 $cfg_Cs[34]=array(2,1,1,'5Lqn5ZOB5LyY5Yq/');
+$cfg_Cs[35]=array(2,1,1,'5piT54m56Lev5ram5ruR5rK5');
 ?>
